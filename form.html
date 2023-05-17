@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+    </script>
+    <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--NAVBAR PALING ATAS-->
+    <div class="bg-white py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-7 lg:px-8">
+          <div class="flex items-center justify-between h-10">
+            <div class="flex gap-x-6">
+              
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 mx-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 mx-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-8 w-8 mx-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-8 w-8 mx-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                      <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="flex-shrink-0">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 mx-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="hidden md:flex md:items-center md:ml-6">
+                <div class="flex items-center space-x-4">
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none" 
+                        class="h-8 w-8"
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        viewBox="0 0 24 24"  
+                        aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="#" class="text-gray-950 font-small text-xs">kkp.budiindratno1@gmail.com</a>
+                  <div class="flex-shrink-0">
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth=2 stroke="black" className="w-8 h-8">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                      </svg>
+                    </a>
+                  </div>
+                    <div class="flex-shrink-0">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg> 
+                      </a>
+                    </div>        
+                    <a href="#" class="text-gray-950 font-small text-xs">Cimahi, Bandung</a>           
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!--NAVBAR BAWAHNYA-->
+    <nav class="bg-sky-100">
+        <div class="max-w-7xl mx-7 px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-evenly h-16">
+            <div class="flex-shrink-0 ml-4 flex items-baseline space-x-4">
+              <a href="/home.html" class="text-blue-600 px-3 py-2 rounded-md text-2xl font-bold">LOGO
+              </a>
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-4 flex items-baseline space-x-4">
+                <a href="#" class="text-black px-3 py-2 rounded-md text-base font-normal">Our Team</a>
+                <a href="/services.html" class="text-black px-3 py-2 rounded-md text-base font-normal">Our Sevice</a>
+                <a href="#" class="text-black px-3 py-2 rounded-md text-base font-normal">Our Client</a>
+                <a href="#" class="text-black px-3 py-2 rounded-md text-base font-normal">Contact</a>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-4 flex items-center md:ml-6">
+                <button class="bg-white hover:bg-sky-200 text-black font-semibold py-1 px-4 hover:border-transparent rounded-lg ml-28 mr-10">
+                  Login
+                </button>
+                <button class="bg-sky-200 hover:bg-white text-black font-semibold py-1 px-4 hover:border-transparent rounded-lg mx-2">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!--FORM 1-->
+    <div class="flex flex-col">
+        <div class="container mx-auto py-8">
+            <div class="grid grid-cols-6 grid-row-3 gap-6 flex justify-center">
+                <div class="col-span-4 row-start-1 row-end-4 bg-sky-100 border border-black rounded-lg p-4">
+                        <label class="block text-black text-medium font-bold mb-2" for="dropdown">
+                            Jasa Konsultasi
+                        </label>
+                        <div class="relative">
+                            <select class="block appearance-none w-full bg-white mb-2 border border-black py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="dropdown">
+                            <option value="" disabled selected>Pilih jasa konsultasi</option>
+                            <option>Penyusunan Manual Pajak Perusahaan</option>
+                            <option>Penyusunan Transfer Pricing Documentation</option>
+                            <option>Penyusunan Asistensi Pajak</option>
+                            </select>
+                        </div>
+                    <h1 class="block text-black text-sm font-bold mb-2" for="title">
+                        Keterangan Jasa:
+                    </h1>
+                    <a class="text-black text-xs font-normal">
+                        Membantu klien perusahaan menyusun pedoman perpajakan yang berisi kebijakan, strategi, prosedur, pelaporan, dan petunjuk teknis perhitungan pajak.
+                    </a>
+                </div>
+                <div class="col-span-2 bg-sky-100 border border-black rounded-lg p-4">
+                    <h2 class="text-black text-sm font-normal">
+                        Biaya Konsultasi
+                    </h2>
+                    <a class="text-black text-sm font-normal">
+                        *Bayar ketika selesai atau saat konsultasi
+                    </a>
+                    <div class="mt-6 flex justify-evenly">
+                        <button class="bg-blue-600 hover:bg-blue-400 text-white font-normal py-1 px-14 border border-gray-400 rounded-lg">
+                        Buat Janji Konsultasi
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FORM 2-->
+        <div class="container mx-auto">
+            <div class="grid grid-cols-6 grid-row-3 gap-6 flex justify-center">
+                <div class="col-span-4 row-start-1 row-end-4 bg-sky-100 border border-black rounded-lg p-4">
+                    <label class="block text-black text-medium font-bold mb-2">
+                        Tanggal Konsultasi
+                    </label>
+                    <div class="relative">
+                        <input type="date" id="date" name="date" class="w-full px-3 py-2 border border-black rounded-lg focus:outline-none {{ (new DateTime() > DateTime::createFromFormat('Y-m-d', $_POST['tanggal'])) ? 'disabled' : '' }}">
+                    </div>
+                    <label class="block text-black text-medium font-bold  mt-4 mb-2">
+                        Waktu Konsultasi
+                    </label>
+                    <select class="w-full border border-black rounded-lg py-2">
+                        <option value="" disabled selected>Pilih Waktu Konsultasi</option>
+                        <option value="09.00 - 10.00">09.00 - 10.00</option>
+                        <option value="10.00 - 11.00">10.00 - 11.00</option>
+                        <option value="11.00 - 12.00">11.00 - 12.00</option>
+                        <option value="13.00 - 14.00">13.00 - 14.00</option>
+                        <option value="14.00 - 15.00">14.00 - 15.00</option>
+                        <option value="15.00 - 16.00">15.00 - 16.00</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    <!--FORM 3-->
+    <div class="container mx-auto mt-8">
+        <div class="grid grid-cols-6 grid-row-3 gap-6 flex justify-center">
+          <div class="col-span-4 row-start-1 row-end-4 bg-sky-100 border border-black rounded-lg p-4">
+            <label class="block text-black text-medium font-bold mb-2">
+              Lokasi Konsultasi
+            </label>
+            <div class="flex justify-start gap-6">
+              <button class="bg-white text-black-sm font-normal hover:bg-blue-600 py-2 px-4 border border-black rounded-lg">
+                Kantor
+              </button>
+              <button class="bg-white text-black-sm font-normal hover:bg-blue-600 py-2 px-4 border border-black rounded-lg">
+                Lainnya
+              </button>
+            </div>
+            <form class="mt-4">
+              <div class="mb-4">
+                <label class="block text-black text-medium font-bold mb-2" for="address">
+                  Tulis Alamat Konsultasi
+                </label>
+                <input class="shadow appearance-none border border-black rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="address" type="text" placeholder="Tulis alamat konsultasi...">
+              </div>
+            </form>
+            <form class="mt-4">
+              <div class="mb-4">
+                <label class="block text-black text-medium font-bold mb-2"for="email">
+                  Tulis Link Alamat (Gmaps)
+                </label>
+                <input class="shadow appearance-none border border-black rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Tulis link alamat konsultasi...">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+<footer>
+    <!--Footer-->
+    <nav class="h-48 mt-12 bg-sky-400">
+        <div class="grid grid-cols-2 gap-2 py-6">
+            <div class="mx-12 pl-24">
+                <h1><b>KKP Budi Indratno</b></h1>
+                <p>Siap melayani klien baik badan maupun perseorangan dalam bidang Accounting Service, Auditing, Tax Planning, Konsultasi dan Pemeriksaan Pajak.</p>
+            </div>
+            <div class="mx-12 pl-24">
+                <h1><b>Contact Us</b></h1>
+                <div class="flex flex-row pt-1">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none" 
+                        class="h-6 w-6 mr-2 row-end-3 justify-end items-end"
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        viewBox="0 0 24 24"  
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+                    </svg>
+                    <div class="font-sans text-center">
+                        <p>kkp.budiindratno1@gmail.com</p>
+                    </div>
+                </div>
+                <div class="flex flex-row pt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6" class="h-6 w-6 mr-2 row-end-3 justify-end items-end">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                    <div class="font-sans text-center">
+                        <p>Jl. Encep Kartawiria Gg. SMK PGRI 2 No. D 04 RT. 02/RW. 18, Kota Cimahi, Jawa Barat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Copyright-->
+    <div class="h-12 bg-sky-500 flex flex-row justify-center items-center">
+        <p class= "font-light text-white"> Copyright @ 2023 <b><u>KKP Budi Indartno</u></b></p>
+    </div>
+
+</footer>
+
+</html>
